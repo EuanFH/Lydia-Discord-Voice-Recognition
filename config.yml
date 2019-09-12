@@ -1,0 +1,27 @@
+discord:
+  token: 0
+  guild: 0
+  voicechannel: 0
+  textchannel: 0
+
+sphinx:
+  hmm: /usr/share/pocketsphinx/model/en-us/en-us
+  dict: /usr/share/pocketsphinx/model/en-us/cmudict-en-us.dict
+  keywordsfile: ./CMUSphinx/keyphrase.kws
+  logfile: ./SphinxLog
+googleservices:
+  credentialsfile:  ./cred.json
+
+rasa:
+  scheme: http
+  host: 127.0.0.1
+  port: 5000
+  project: project
+  language: en
+  pipeline: spacy_sklearn
+
+remotebot:
+  address: http://127.0.0.1:8080/
+
+log:
+  path: ./log
